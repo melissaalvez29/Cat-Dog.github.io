@@ -1,0 +1,108 @@
+.depoimento-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*     height: 80vh; */
+    background-color: var(--cor-6);
+    overflow: hidden;
+}
+
+.depoimento-home img {
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
+    /*  height: 50vh; */
+    object-fit: cover;
+}
+
+
+/* nao tao grande */
+
+
+/* .depoimento-home-conteudo {
+    align-self: center;
+    padding: 10px 40px 120px 80px;
+} */
+
+.depoimento-home-conteudo {
+    align-self: end;
+    padding: 60px 40px 80px 80px;
+}
+
+.depoimento-home-conteudo p {
+    margin-bottom: 32px;
+    max-width: 32ch;
+    position: relative;
+}
+
+.depoimento-home-conteudo p::after,
+.depoimento-home-conteudo p::before {
+    font-size: 5rem;
+    position: absolute;
+}
+
+.depoimento-home-conteudo p::before {
+    content: "“";
+    left: -50px;
+    top: -20px;
+}
+
+.depoimento-home-conteudo p::after {
+    content: " ”";
+}
+
+.depoimento-home-conteudo h3 {
+    margin-bottom: 16px;
+}
+
+.depoimento-home-conteudo h3~span {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.depoimento-home-conteudo h3~span::before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 18px;
+    background: url(../../img/home/dec.svg);
+}
+
+
+/* @media (min-width: 900px) {
+    .depoimento-home img {
+        max-height: 520px;
+    }
+} */
+
+@media (max-width: 1000px) {
+    .depoimento-home-conteudo {
+        padding: 60px 20px 120px 80px;
+    }
+}
+
+@media (max-width: 800px) {
+    .depoimento-home {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .depoimento-home img {
+        height: 200px;
+    }
+    .depoimento-home-conteudo {
+        justify-self: center;
+        padding: 40px 20px;
+    }
+    .depoimento-home-conteudo p::after,
+    .depoimento-home-conteudo p::before {
+        font-size: 3.5rem;
+    }
+    .depoimento-home-conteudo p::before {
+        content: "“";
+        left: -10px;
+        top: -10px;
+    }
+    .depoimento-home-conteudo h3~span {
+        justify-content: center;
+    }
+}

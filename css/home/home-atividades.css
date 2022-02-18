@@ -1,0 +1,47 @@
+.atividades-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--cor-6);
+    overflow: hidden;
+}
+
+.atividades-home-conteudo {
+    align-self: center;
+    padding: 20px 20px 40px 80px;
+}
+
+.atividades-home-conteudo h2 {
+    margin-bottom: 32px;
+    max-width: 14ch;
+}
+
+.atividades-home-conteudo p {
+    max-width: 43ch;
+    margin-bottom: 24px;
+}
+
+.atividades-home img {
+    width: 100%;
+    height: 100%;
+    /* Apenas para imagens que podem serem cortadas */
+    object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+    .atividades-home-conteudo {
+        padding: 60px 20px 40px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .atividades-home {
+        grid-template-columns: 1fr;
+    }
+    .atividades-home-conteudo p,
+    .atividades-home-conteudo h2 {
+        max-width: max-content;
+    }
+    .atividades-home-conteudo {
+        padding-top: 40px;
+    }
+}

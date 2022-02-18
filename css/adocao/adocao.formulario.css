@@ -1,0 +1,32 @@
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formulario-texto {
+    margin-bottom: 40px;
+}
+
+.formulario-conteudo div:first-child h2 {
+    margin-bottom: 32px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+    .comentario-adocao {
+        display: none;
+    }
+    .formulario-texto {
+        margin-bottom: 30px;
+    }
+    .formulario-conteudo div:first-child h2 {
+        margin-bottom: 16px;
+    }
+}

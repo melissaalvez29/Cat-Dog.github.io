@@ -1,0 +1,39 @@
+.passos-bg {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background-color: var(--cor-6);
+}
+
+.passos {
+    text-align: center;
+}
+
+.passos h2 {
+    padding-bottom: 60px;
+}
+
+.lista-passos {
+    display: flex;
+    gap: 0 60px;
+    align-items: center;
+}
+
+.lista-passos img {
+    margin-bottom: 10px;
+}
+
+.lista-passos h3 {
+    margin-bottom: 16px;
+}
+
+.lista-passos li:last-child {
+    margin-top: 10px;
+    align-self: center;
+}
+
+@media (max-width: 800px) {
+    .lista-passos {
+        flex-direction: column;
+        gap: 50px 0;
+    }
+}

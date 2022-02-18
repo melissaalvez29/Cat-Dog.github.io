@@ -1,0 +1,41 @@
+.atividades {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: start;
+}
+
+.atividades-conteudo-intro {
+    align-self: center;
+}
+
+.atividades-conteudo-intro span {
+    margin-bottom: 10px;
+}
+
+.atividades-conteudo-intro h1 {
+    margin-bottom: 32px;
+}
+
+.atividades div:last-child {
+    justify-self: end;
+}
+
+.atividades div:last-child img {
+    object-fit: cover;
+    border-radius: 4px;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .atividades {
+        grid-template-columns: 1fr;
+    }
+    .atividades-conteudo-intro h1 {
+        margin-bottom: 16px;
+    }
+    .atividades div:last-child {
+        display: none;
+    }
+}

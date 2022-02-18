@@ -1,0 +1,96 @@
+.perguntas-freq {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.perguntas-freq h2 {
+    margin-bottom: 60px;
+}
+
+.perguntas-conteudo div {
+    margin-top: 20px;
+}
+
+.perguntas-conteudo dl>div:nth-child(odd) {
+    background-color: #f6f6f6;
+}
+
+.perguntas-conteudo dl>div {
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.perguntas-conteudo dt {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.perguntas-conteudo dt::before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 13px;
+    background-color: var(--cor-8);
+}
+
+.perguntas-conteudo dd {
+    max-width: 114ch;
+    padding: 0 0 0 10px;
+}
+
+
+/* Animação da seta */
+
+@media (max-width: 800px) {
+    .perguntas-freq {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+    .font-3-rm {
+        text-transform: lowercase;
+    }
+}
+
+
+/* Accordion list:  */
+
+.js-accordion dd {
+    display: none;
+}
+
+.js-accordion dd.ativo {
+    display: block;
+    animation: slideDown 0.5s forwards;
+}
+
+.js-accordion dt::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+    background: url("../../img/adocao/icones/seta-c.svg");
+    transition: 0.3s;
+}
+
+.js-accordion dt.ativo::after {
+    transform: rotate(180deg);
+}
+
+
+/* Animação accordionList:  */
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 400px;
+    }
+}

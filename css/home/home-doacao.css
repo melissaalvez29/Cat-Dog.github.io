@@ -1,0 +1,47 @@
+.doacao-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--cor-6);
+    overflow: hidden;
+}
+
+.doacao-home-conteudo {
+    align-self: center;
+    padding: 20px 20px 40px 80px;
+}
+
+.doacao-home-conteudo h2 {
+    margin-bottom: 32px;
+    max-width: 10ch;
+}
+
+.doacao-home-conteudo p {
+    max-width: 35ch;
+    margin-bottom: 24px;
+}
+
+.doacao-home img {
+    width: 100%;
+    height: 100%;
+    /* Apenas para imagens que podem serem cortadas */
+    object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+    .doacao-home-conteudo {
+        padding: 60px 20px 40px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .doacao-home {
+        grid-template-columns: 1fr;
+    }
+    .doacao-home-conteudo p,
+    .doacao-home-conteudo h2 {
+        max-width: max-content;
+    }
+    .doacao-home-conteudo {
+        padding-top: 40px;
+    }
+}

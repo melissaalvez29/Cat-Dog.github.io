@@ -1,0 +1,45 @@
+/* Global:   */
+
+@import "./global/normalize.css";
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+
+/* Home */
+
+@import "./home/home-adocao.css";
+@import "./home/home-atividades.css";
+@import "./home/lista-animais.css";
+@import "./home/home-doacao.css";
+@import "./home/lista-parceiros.css";
+@import "./home/home-depoimento.css";
+
+/* Utilidades */
+
+@import "./utilidades/cores.css";
+@import "./utilidades/tipografia.css";
+@import "./utilidades/componentes.css";
+@import "./utilidades/menu-mobile.css";
+@import "./utilidades/formulario.css";
+
+/* adocao */
+
+@import "./adocao/adocao-intro.css";
+@import "./adocao/adocao.lista.css";
+@import "/css/adocao/adocao-perguntas.css";
+@import "../css/adocao/adocao.formulario.css";
+@import "../css/adocao/adocao-comentario.css";
+
+/* Atividades */
+
+@import "./atividade/intro-atividades.css";
+@import "./atividade/atividades-lista.css";
+@import "./atividade/info.local.css";
+
+/* Doacao */
+
+@import "./doacao/doacao.css";
+
+/* Contato */
+
+@import "./contato/contato.css";

@@ -1,0 +1,53 @@
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form .col-2 {
+    grid-column: span 2;
+}
+
+.form label {
+    display: grid;
+    font: 600 1rem/1.5 "poppins", sans-serif;
+    margin-bottom: 4px;
+}
+
+.form input[type="tel"],
+.form input[type="text"] {
+    justify-self: end;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form textarea {
+    font: 400 1rem/1.5 "Roboto", sans-serif;
+    background-color: #f6f6f6;
+    border: 1px solid var(--cor-2);
+    border-radius: 4px;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form input[type="tel"]:focus,
+.form textarea:focus {
+    outline: none;
+    /* Cor da borda */
+    border-color: var(--cor-8);
+    background-color: var(--cor-0);
+}
+
+@media (max-width: 600px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+    .form .col-2 {
+        /* não se expande mais em duas colunas. */
+        grid-column: 1;
+    }
+}

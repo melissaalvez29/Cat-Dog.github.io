@@ -1,0 +1,51 @@
+.lista-animais-home {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    display: grid;
+    gap: 40px;
+    justify-content: center;
+}
+
+.lista-animais-home div {
+    text-align: center;
+}
+
+.lista-animais-home div h2 {
+    margin-bottom: 32px;
+}
+
+.lista ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 40px;
+}
+
+.lista ul h3 {
+    display: grid;
+}
+
+@media (max-width: 1000px) {
+    .lista ul {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 40px;
+    }
+}
+
+@media (max-width: 800px) {
+    .lista-animais-home {
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+    .lista-animais-home div h2 {
+        margin-bottom: 16px;
+    }
+    .lista ul {
+        gap: 40px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .lista ul {
+        grid-template-columns: 1fr;
+    }
+}

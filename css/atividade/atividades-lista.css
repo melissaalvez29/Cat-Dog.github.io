@@ -1,0 +1,47 @@
+.atividades-bg {
+    background-color: var(--cor-6);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.atividades-cont {
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+}
+
+.atividades-conteudo {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.atividades-conteudo h2 {
+    margin-bottom: 32px;
+}
+
+.atividade-lista {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    gap: 0 20px;
+}
+
+.atividade-lista img {
+    margin-bottom: 10px;
+}
+
+.atividade-lista h3 {
+    margin-bottom: 16px;
+}
+
+@media (max-width: 800px) {
+    .atividade-lista {
+        grid-template-columns: 1fr;
+        gap: 60px 0;
+    }
+    .atividades-conteudo {
+        margin-bottom: 40px;
+    }
+}

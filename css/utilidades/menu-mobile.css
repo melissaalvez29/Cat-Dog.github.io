@@ -1,0 +1,70 @@
+#btn-mobile {
+    display: none;
+}
+
+@media (max-width: 750px) {
+    #header-menu ul {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 110px;
+        left: 0;
+        height: 0;
+        transition: 0.6s;
+        background-color: #fff;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    /* Quando o nav for clicado e tiver a class de active, faça: */
+    #nav.active #header-menu ul {
+        display: block;
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #header-menu ul a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+    #header-menu ul li a:hover {
+        background-color: rgba(0, 0, 0, 0.03);
+    }
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    #hamburger {
+        display: block;
+        border-top: 2px solid var(--cor-1);
+        gap: 0.5rem;
+        width: 20px;
+    }
+    #hamburger::before,
+    #hamburger::after {
+        content: " ";
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-top: 5px;
+        /* variavel da cor pai. */
+        background-color: var(--cor-1);
+        transition: 0.3s;
+        position: relative;
+    }
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}

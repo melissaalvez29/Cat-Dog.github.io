@@ -1,0 +1,159 @@
+/* Títulos */
+
+.font-1-xxl {
+    font: 600 4rem/1.2 "Poppins", sans-serif;
+}
+
+
+/* Comentários */
+
+.font-1xxlC {
+    font: 900 4rem/1.2 "Merriwheater", serif;
+    font-style: italic;
+}
+
+
+/* Subtitulos */
+
+.font-2-xxl {
+    font: 600 2rem/1.2 "Poppins", sans-serif;
+}
+
+
+/* Corpo de texto:  */
+
+.font-1-xl,
+.font-1-xl-b,
+.font-1-xl-b2 {
+    font: 400 1.5rem/1.5 "Roboto", sans-serif;
+}
+
+.font-1-xl-b,
+.font-1-xl-b2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+
+/* .font-1-xl-b2 {
+    font-weight: 500;
+    font-family: "Poppins";
+}
+ */
+
+
+/* Título para as listas de animais:  */
+
+.font-1-xl-p,
+.font-1-xl-p-m {
+    font: 400 1.5rem/1.5 "Poppins", sans-serif;
+}
+
+.font-1-xl-p-m {
+    font-weight: 600;
+}
+
+
+/* Nome dos gatos *1.25*/
+
+.font-2-x2m {
+    font: 500 1.25rem/1.2 "Poppins", sans-serif;
+}
+
+.font-2-x2r,
+.font-2-x2r-m {
+    font: 400 1.125rem/1.2 "Poppins", sans-serif;
+}
+
+.font-2-x2r-m {
+    font-weight: 600;
+}
+
+.font-3-rm,
+.font-3-u-p,
+.font-3-xs {
+    font: 500 1rem/1.3 "Roboto", sans-serif;
+    text-transform: uppercase;
+}
+
+.font-3-xs {
+    font-weight: 400;
+    text-transform: none;
+}
+
+.font-3-u {
+    text-transform: none;
+    color: var(--cor-7);
+}
+
+
+/* Texto do botão: */
+
+.font-1-xs,
+.font-1-xs-mb {
+    font: 400 1.125rem/1.2 "Roboto", sans-serif;
+}
+
+
+/* link-menu */
+
+.font-1-xs-mb {
+    font-weight: 600;
+}
+
+.font-1-xs-p {
+    font: 600 1.125rem/1 "Poppins", sans-serif;
+}
+
+
+/* Corpo do texto de perguntas */
+
+.font-2-x,
+.font-2-x-mb {
+    font: 400 1rem/1.5 "Roboto", sans-serif;
+}
+
+.font-2-x-mb {
+    font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+    .font-1-xxl,
+    .font-1xxlC {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .font-2-xxl {
+        font-size: 1.5rem;
+    }
+    .font-1-xl {
+        font-size: 1.125rem;
+    }
+    .font-1-xs,
+    .font-1-xs-mb {
+        font-size: 1rem;
+    }
+    .font-1-xl-p-m {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .font-1xxlC,
+    .font-1-xxl {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .font-1-xl,
+    .font-1-xl-b,
+    .font-1-xl-b2 {
+        font-size: 1.25rem;
+    }
+    .font-2-x2r-m {
+        font-size: 1rem;
+    }
+}
